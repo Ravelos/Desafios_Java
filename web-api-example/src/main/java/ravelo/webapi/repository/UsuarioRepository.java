@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class UserRepository {
+public class UsuarioRepository {
     public void save(Usuario usuario){
         System.out.println("SAVE - Recebendo o usuário na camada de repositório");
         System.out.println(usuario);
@@ -29,6 +29,11 @@ public class UserRepository {
     }
     public Usuario finById(Integer id){
         System.out.println(String.format("FIND/id - Recebendo o id: %d para localizar um usuário", id));
+        return new Usuario("gleyson","password");
+    }
+
+    public Usuario findByUsername(String username){
+        System.out.println(String.format("FIND/username - Recebendo o username: %s para localizar um usuario", username));
         return new Usuario("gleyson","password");
     }
 }
