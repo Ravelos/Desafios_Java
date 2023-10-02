@@ -8,7 +8,7 @@ import ravelo.webapi.repository.UsuarioRepository;
 import java.util.List;
 
 @RestController
-@RestController("/users")
+@RequestMapping("/users")
 public class UsuarioController {
     @Autowired
     private UsuarioRepository repository;
