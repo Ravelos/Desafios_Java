@@ -20,7 +20,7 @@ public class Desafio {
     }
 }
 
-class ContaBancaria {
+class ContaBancaria{
     protected int numero;
     protected String titular;
     protected double saldo;
