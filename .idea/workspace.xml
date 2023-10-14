@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d18b01c2-b48f-42f3-bd44-2142aae7358d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Challenges/Desafio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Challenges/Desafio.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/oswaldo.castillo/IdeaProjects/Desafios_Java/web-api-example",
+    "last_opened_file_path": "C:/Users/oswaldo.castillo/IdeaProjects/ravelos.restful-api",
     "onboarding.tips.debug.path": "C:/Users/oswaldo.castillo/IdeaProjects/Desafios_Java/src/Main.java"
   }
 }]]></component>
