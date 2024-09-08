@@ -7,13 +7,17 @@ public class Main {
         int total = 0;
        
         // TODO: Calcule o consumo total de dados móveis
+        for(String consumo:consumoSemanal) {
+          total += Integer.parseInt(consumo);
+        }
 
         return total;
     }
 
     // Função para calcular a média semanal de consumo de dados móveis
     public static int calcularMediaSemanal(int totalConsumo, int numeroDeSemanas) {
-        return // Calcule a média semanal de consumo de dados móveis
+      int media = totalConsumo / numeroDeSemanas;
+        return media;// Calcule a média semanal de consumo de dados móveis
     }
 
     // Função para identificar a semana de maior consumo
@@ -25,6 +29,10 @@ public class Main {
         for (int i = 0; i < consumoSemanal.length; i++) {
           int consumo = Integer.parseInt(consumoSemanal[i].trim());
 	        // TODO: Estabeleça Faça o cálculo para identificar a semana de maior consumo
+	        if(consumo > maiorConsumo) {
+	          maiorConsumo = consumo;
+	          semanaDeMaiorConsumo = i + 1;
+	        }
         }
         return semanaDeMaiorConsumo;
     }
