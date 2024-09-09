@@ -5,7 +5,8 @@ public class Main {
     // Função para converter GB para MB
     public static int gbParaMb(double gb) {
 		    // TODO: Faça o calculo de conversão GB para MB, sabendo que 1 GB = 1024 MB
-        return
+		    long MB = (long) gb * 1024;
+        return (int) MB;
     }
 
     // Função principal para verificar o limite de dados móveis
@@ -14,10 +15,10 @@ public class Main {
         int limiteMb = gbParaMb(limiteGb);
 
         // TODO: Verifique se o consumo total excede o limite mensal em MB
-        if () {
+        if (consumoTotalMb > limiteMb) {
             System.out.println("Limite de dados excedido. Compre ou renove seu pacote.");
         } else {
-            int dadosDisponiveis = 
+            int dadosDisponiveis = (int) limiteMb - consumoTotalMb; 
             System.out.println("Voce ainda possui " + dadosDisponiveis + " MB disponiveis.");
         }
     }
