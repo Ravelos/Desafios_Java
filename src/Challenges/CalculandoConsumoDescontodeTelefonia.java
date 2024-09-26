@@ -34,16 +34,35 @@ class ComboServicos {
                 .filter(servico -> servico.getValor() > 0)
                 .count();
 
-        double desconto;
+        double desconto = 0.0;
+        double descontoFinal = desconto;
         // TODO: Aplique o desconto correspondente à quantidade de serviços contratados
-
+       switch(servicosContratados) {
+         case 1:
+           descontoFinal = desconto1;
+           break;
+         case 2:
+           descontoFinal = desconto2;
+           break;
+         case 3:
+           descontoFinal = desconto3;
+           break;
+       }
+       
+       
         // Calcula o valor total com desconto
-        double valorComDesconto = Arrays.stream(servicos)
+        double valorTotalSemDesconto = Arrays.stream(servicos)
                 .filter(servico -> servico.getValor() > 0)
                 .mapToDouble(Servico::getValor)
-                .sum() * (1 - desconto / 100);
+                .sum();
+        
+        // Aplica o desconto progressivo
+        double valorComDesconto = valorTotalSemDesconto * (1 - descontoFinal / 100);
 
-        // TODO: Aplique desconto adicional se todos os três serviços foram contratados
+        // Aplica o desconto adicional se todos os três serviços foram contratados
+        if (servicosContratados == 3) {
+            valorComDesconto -= descontoAdicional;
+        }
 
         return valorComDesconto;
     }
